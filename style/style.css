@@ -76,6 +76,7 @@ header #branding h1 {
     width:70%;
     font-size: 30px;
     margin-left: -50px; 
+    text-align: center;
 }
 
 header nav{
@@ -101,6 +102,7 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    background-position: center;
     color: white;
     text-transform: uppercase;
 }
@@ -115,7 +117,7 @@ header a:hover{
 #showcase h1 span{
     display: inline-block;
     border: 2px solid darkblue;
-    padding: 10px;
+    padding: 30px;
 }
 #showcase h1::before,
 #showcase h1::after {
@@ -244,13 +246,86 @@ aside#sidebar {
 
 
 
-@media only screen and (max-width:750px){
-    #showcase h1 {
-        font-size: 30px; 
+@media  (max-width:768px){
+    header #branding img{
+        width: 50%;
     }
-
+    header #branding h1 {
+        margin-top: 50px; 
+        margin-right: 10px;
+        padding-right: 12px;
+        float: right;
+        width: 50%;
+        font-size: 20px; /* Adjust the font size for smaller screens */
+        text-align: center; /* Center the text */
+      
+    }
+    header nav,
+    header nav li{
+        
+        float:none;
+        text-align: center;
+        padding-bottom:10px;
+       
+    }
+    #showcase h1{
+        font-size: 30px;
+    }
     #showcase h1 span {
         display: block;
-        margin-bottom: 10px; 
+        border: 2px solid darkblue;
+        padding: 15px;
+        margin: 10px 0; 
     }
+    #showcase h1::before,
+    #showcase h1::after {
+        width: 20px; /* Adjust the width of pseudo-elements for smaller screens */
+    }
+    #showcase p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #newsletter{
+        background-color: aqua;
+        padding:15px;
+        text-align: center;
+    }
+    #newsletter h1 {
+        float:none;
+        display: inline-block;
+        width:100%;
+        
+    }
+
+    #newsletter form{
+        float:none;
+        display: inline-block;
+        width:60%;
+    }
+    #newsletter form input[type="email"] {
+        margin-bottom: 20px;
+    }
+    
+    #newsletter form input[type="password"] {
+        margin-bottom: 20px; 
+    }
+    
+    #newsletter .button_1 {
+        width: 92%;
+        margin-top: 10px;
+        margin-right: 100px;
+        display: block;
+    }
+
+    #boxes .box, #boxes .box-special, article#main-col, aside#sidebar{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+    
+
+
+
+    
 }
